@@ -1,0 +1,25 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type LaptopGraph {
+  id: Int!
+  title: String!
+  price: Float!
+  description: String!
+}
+
+type Query {
+  laptops: [LaptopGraph!]!
+}
+
+type Mutation {
+  createLaptop(createLaptopInput: CreateLaptopInput!): LaptopGraph!
+  deleteLaptop(id: Int!): LaptopGraph!
+}
+
+input CreateLaptopInput {
+  title: String!
+  price: Float!
+  description: String!
+}
